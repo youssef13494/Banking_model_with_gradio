@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load the saved pipeline
-model_pipeline = joblib.load(r'C:\Users\DELL\Banking_model_gradio\model_pipeline.pkl')
+model_pipeline = joblib.load('model_pipeline.pkl')
 
 def predict_churn(credit_score, gender, tenure, balance, age, products_number, credit_card, active_member, estimated_salary, country):
     # Create a DataFrame from the inputs
